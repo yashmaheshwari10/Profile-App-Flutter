@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                                   fontSize: 20, fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Contact: 9552511300",
+                              "Contact: 911",
                               textAlign: TextAlign.start,
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold),
@@ -82,16 +82,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ])),
-            ElevatedButton.icon(
-                onPressed: () async {
-                  final url =
-                      Uri.parse('https://www.instagram.com/yashnotkool/');
-                  if (await canLaunchUrl(url)) {
-                    await launchUrl(url);
-                  }
-                },
-                icon: Icon(Icons.account_box),
-                label: Text("instagram")),
             ElevatedButton.icon(
                 onPressed: () async {
                   final url = Uri.parse(
